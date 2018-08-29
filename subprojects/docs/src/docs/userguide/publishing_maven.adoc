@@ -23,13 +23,11 @@ The Maven Publish Plugin provides the ability to publish build artifacts to an h
 
 To use the Maven Publish Plugin, include the following in your build script:
 
-=== Example: Applying the Maven Publish Plugin
-
-[source.multi-language-sample,groovy]
-.build.gradle
-----
-include::{samplesPath}/maven-publish/quickstart/build.gradle[tag=use-plugin]
-----
+.Applying the Maven Publish Plugin
+====
+include::sample[dir="maven-publish/quickstart/groovy",files="build.gradle[tags=use-plugin]"]
+include::sample[dir="maven-publish/quickstart/kotlin",files="build.gradle.kts[tags=use-plugin]"]
+====
 
 The Maven Publish Plugin uses an extension on the project named `publishing` of type link:{groovyDslPath}/org.gradle.api.publish.PublishingExtension.html[PublishingExtension]. This extension provides a container of named publications and a container of named repositories. The Maven Publish Plugin works with link:{groovyDslPath}/org.gradle.api.publish.maven.MavenPublication.html[MavenPublication] publications and link:{groovyDslPath}/org.gradle.api.artifacts.repositories.MavenArtifactRepository.html[MavenArtifactRepository] repositories.
 
@@ -119,13 +117,11 @@ This plugin provides <<dependency_management_terminology.adoc#sub:terminology_re
 
 Here's a simple example of defining a publishing repository:
 
-=== Example: Declaring repositories to publish to
-
-[source.multi-language-sample,groovy]
-.build.gradle
-----
-include::{samplesPath}/maven-publish/quickstart/build.gradle[tag=repositories]
-----
+.Declaring repositories to publish to
+====
+include::sample[dir="maven-publish/quickstart/groovy",files="build.gradle[tags=repositories]"]
+include::sample[dir="maven-publish/quickstart/kotlin",files="build.gradle.kts[tags=repositories]"]
+====
 
 The two main things you will want to configure are the repository's:
 

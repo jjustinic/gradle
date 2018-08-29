@@ -1,11 +1,11 @@
 // tag::use-plugin[]
 plugins {
+// end::use-plugin[]
+    id 'java'
+// tag::use-plugin[]
     id 'maven-publish'
 }
 // end::use-plugin[]
-plugins {
-    id 'java'
-}
 
 group = 'org.gradle.sample'
 version = '1.0'
